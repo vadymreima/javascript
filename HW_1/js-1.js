@@ -1,10 +1,10 @@
 //TASK 1////////////////////////////////////
-let productQuantity = Number(prompt('Enter the quantity of goods'));
-let productPrice = 147.93;
-let summ = productQuantity * productPrice;
+let product_quantity = Number(prompt('Enter the quantity of goods'));
+let product_price = 147.93;
+let sum = product_quantity * product_price;
 
-console.log('Amount: ', summ);
-alert('Amount:' + (summ));
+console.log('Amount: ', sum);
+alert('Amount:' + (sum));
 
 
 
@@ -12,9 +12,9 @@ alert('Amount:' + (summ));
 
 
 //TASK 2//////////////////////////////////////
-let product_price = Number(prompt('Enter price please'));
-let discount = product_price * 0.93;
-let Summ = product_price - discount;
+let product__price = Number(prompt('Enter price please'));
+let discount = product__price * 0.93;
+let Summ = product__price - discount;
 
 console.log('price with discount: ', Summ);
 alert('Price with promo =' + (Summ));
