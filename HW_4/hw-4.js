@@ -10,14 +10,14 @@ function getAnimalFn(animalsArr, item) {
     else if (item == 'last') {
         console.log(animalsArr[animalsArr.length - 1])
     }
-        if ( item != 'first') {
-            console.log('error')
-        }
-        else if ( item != 'last') {
-            console.log('error')
-        }
+        // if ( item != 'first') {
+        //     console.log('error')
+        // }
+        // else if ( item != 'last') {
+        //     console.log('error')
+        // }
 }
-getAnimalFn(animals, 'last')
+getAnimalFn(animals, 'first')
 
 
 
