@@ -40,10 +40,10 @@ console.log(sortPopular(filmArr))
 
 
 let films = ['OPPENHEIMER', 'LEAVE NO TRACE', 'GOOD LUCK', 'THE FLASH', 'THEY CLONED TYRONE', 'SOUND OF FREEDOM'];
-let year = [2022,2023,2017,2020,2021,2019];
+let year = [2022, 2023, 2017, 2020, 2021, 2019];
 
 let listArr = [];
-for (let i = 0; i < films.length; i++) {
+for (let i = 0; i < year.length; i++) {
     let objectVideo = {
         title: films[i],
         year: year[i]
