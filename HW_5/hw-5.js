@@ -8,28 +8,23 @@ function FilmMakerConstructor (nameFilm, relizAge, rating){
 FilmMakerConstructor.prototype.giveInfo = function(){
     console.log(`Name fiml ${this.nameFilm}, his data relize ${this.relizAge} and his reting ${this.rating}`);
 }
-const firstFilm = new FilmMakerConstructor('SOUND OF FREEDOM', 2022, '74');
+let firstFilm = new FilmMakerConstructor('SOUND OF FREEDOM', 2022, '74');
 firstFilm.giveInfo();
 
-const filmArr = [];
-const Film1 = new FilmMakerConstructor('OPPENHEIMER', 2023, '94');
-filmArr.push(Film1)
-const Film2 = new FilmMakerConstructor('THEY CLONED TYRONE', 2017, '59');
-filmArr.push(Film2)
-const Film3 = new FilmMakerConstructor('THE FLASH', 2020, '63');
-filmArr.push(Film3)
-const Film4 = new FilmMakerConstructor('LEAVE NO TRACE', 2021, '81');
-filmArr.push(Film4)
-const Film5 = new FilmMakerConstructor('GOOD LUCK', 2019, '49');
-filmArr.push(Film5)
-console.log(filmArr);
+let filmArr = [];
+let Film1 = new FilmMakerConstructor('OPPENHEIMER', 2023, '94');
+let Film2 = new FilmMakerConstructor('THEY CLONED TYRONE', 2017, '59');
+let Film3 = new FilmMakerConstructor('THE FLASH', 2020, '63');
+let Film4 = new FilmMakerConstructor('LEAVE NO TRACE', 2021, '81');
+let Film5 = new FilmMakerConstructor('GOOD LUCK', 2019, '49');
+filmArr = filmArr.concat(Film1, Film2, Film3, Film4, Film5);
 
 let sortPopular = function(Arr){
     Arr.sort((a, b) => a.rating - b.rating);
     return Arr;
 }
-console.log(sortPopular(filmArr))
-
+console.log(sortPopular(filmArr));
+sortPopular(filmArr);
 
 
 
