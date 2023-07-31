@@ -97,21 +97,7 @@ for (const {model, sales} of carArr) {
     //  задача на роботу з Date
 
 
-    function daysThisAndNextMonth() {
-        let dateRn = new Date();
-        let monthRn = dateRn.getMonth();
-        let yearRn = dateRn.getFullYear();
-        
-        let nextMonth = monthRn === 11 ? 0 : monthRn + 1;
-        
-        let daysQuantityRn = new Date(yearRn, monthRn + 1, 0).getDate();
-        let nextDaysQuantity = new Date(yearRn, nextMonth + 1, 0).getDate();
-        
-        return `In this month there are ${daysQuantityRn} days, and in the next month, there are ${nextDaysQuantity} days.`;
-    }
     
-    
-    console.log(daysThisAndNextMonth());
     
     
 
