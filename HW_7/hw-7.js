@@ -85,11 +85,39 @@ for (const {model, sales} of carArr) {
 
     arr2.forEach(item => {item.innerHTML = `Done`});
 
-    // for (let i = 0; i < arr2; i++) {
-    //     arr2.length[i].innerHTML = 'Done2';
+    // for (let i = 0; i < arr2.length; i++) {
+    //     arr2[i].innerHTML = 'Done2';
     // }
 
-}
+
+
+
+    // - Створити функцію яка при виклику повертає інформацію скільки днів в 
+    // цьому місяці а також в наступному   ( В цьому місяці 30 днів в наступному 31 )
+    //  задача на роботу з Date
+
+
+    function daysThisAndNextMonth() {
+        let dateRn = new Date();
+        let monthRn = dateRn.getMonth();
+        let yearRn = dateRn.getFullYear();
+        
+        let nextMonth = monthRn === 11 ? 0 : monthRn + 1;
+        
+        let daysQuantityRn = new Date(yearRn, monthRn + 1, 0).getDate();
+        let nextDaysQuantity = new Date(yearRn, nextMonth + 1, 0).getDate();
+        
+        return `In this month there are ${daysQuantityRn} days, and in the next month, there are ${nextDaysQuantity} days.`;
+    }
+    
+    
+    console.log(daysThisAndNextMonth());
+    
+    
+
+
+
+}   
     
 
 
